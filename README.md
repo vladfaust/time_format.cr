@@ -1,6 +1,8 @@
-# TimeFormat [![Build Status](https://travis-ci.org/vladfaust/time_format.cr.svg?branch=master)](https://travis-ci.org/vladfaust/time_format.cr) [![Docs](https://img.shields.io/badge/docs-available-brightgreen.svg)](https://vladfaust.com/time_format.cr) [![GitHub release](https://img.shields.io/github/release/vladfaust/time_format.cr.svg)](https://github.com/vladfaust/time_format.cr/releases)
+<img src="https://user-images.githubusercontent.com/7955682/30345737-ed6eb2c0-980e-11e7-8d09-1a9f088fdd4a.png" height="200">
 
-Tiny shard for humanizing time spans.
+# [![Build Status](https://travis-ci.org/vladfaust/time_format.cr.svg?branch=master)](https://travis-ci.org/vladfaust/time_format.cr) [![Docs](https://img.shields.io/badge/docs-available-brightgreen.svg)](https://vladfaust.com/time_format.cr) [![Dependency Status](https://shards.rocks/badge/github/vladfaust/time_format.cr/status.svg)](https://shards.rocks/github/vladfaust/time_format.cr) [![GitHub release](https://img.shields.io/github/release/vladfaust/time_format.cr.svg)](https://github.com/vladfaust/time_format.cr/releases)
+
+[TimeFormat](https://github.com/vladfaust/time_format.cr) module humanizes time spans.
 
 ## Installation
 
@@ -33,3 +35,9 @@ TimeFormat.μs(1.0.milliseconds / 5.0) # => 200μs
 ## Contributors
 
 - [@vladfaust](https://github.com/vladfaust) Vlad Faust - creator, maintainer
+
+
+## Credits
+
+- Logo font: [HVD Comic Serif Pro](https://www.fontsquirrel.com/fonts/hvd-comic-serif-pro)
+- Logo image: [EmojiOne](https://www.emojione.com/)
