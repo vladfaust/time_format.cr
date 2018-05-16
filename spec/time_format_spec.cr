@@ -1,7 +1,7 @@
 require "./spec_helper"
 
 describe TimeFormat do
-  span = 5.minutes + 36.seconds + 175.milliseconds + (1.0.milliseconds / 18.0)
+  span = 5.minutes + 36.seconds + 175.milliseconds + (1.0.milliseconds / 18)
 
   describe "#auto" do
     it "works" do
@@ -47,7 +47,7 @@ describe TimeFormat do
 
   describe "#milliseconds" do
     it "works" do
-      TimeFormat.milliseconds(span).should eq "336175.055 milliseconds"
+      TimeFormat.milliseconds(span).should eq "336175.056 milliseconds"
     end
 
     it "works when 1 millisecond" do
@@ -57,7 +57,7 @@ describe TimeFormat do
 
   describe "#ms" do
     it "works" do
-      TimeFormat.ms(span).should eq "336175.055ms"
+      TimeFormat.ms(span).should eq "336175.056ms"
     end
   end
 
@@ -67,7 +67,7 @@ describe TimeFormat do
     end
 
     it "works when 1 microsecond" do
-      TimeFormat.microseconds(1.0.milliseconds / 1000.0).should eq "1 microsecond"
+      TimeFormat.microseconds(1.0.milliseconds / 1000).should eq "1 microsecond"
     end
   end
 
