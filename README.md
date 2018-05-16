@@ -1,8 +1,11 @@
-<img src="https://user-images.githubusercontent.com/7955682/30345737-ed6eb2c0-980e-11e7-8d09-1a9f088fdd4a.png" height="200">
+# TimeFormat
 
-# [![Build Status](https://travis-ci.org/vladfaust/time_format.cr.svg?branch=master)](https://travis-ci.org/vladfaust/time_format.cr) [![Docs](https://img.shields.io/badge/docs-available-brightgreen.svg)](https://vladfaust.com/time_format.cr) [![Dependency Status](https://shards.rocks/badge/github/vladfaust/time_format.cr/status.svg)](https://shards.rocks/github/vladfaust/time_format.cr) [![GitHub release](https://img.shields.io/github/release/vladfaust/time_format.cr.svg)](https://github.com/vladfaust/time_format.cr/releases)
+[![Built with Crystal](https://img.shields.io/badge/built%20with-crystal-000000.svg?style=flat-square)](https://crystal-lang.org/)
+[![Build status](https://img.shields.io/travis/vladfaust/time-format.cr/master.svg?style=flat-square)](https://travis-ci.org/vladfaust/time-format.cr)
+[![Docs](https://img.shields.io/badge/docs-available-brightgreen.svg?style=flat-square)](https://vladfaust.com/time-format.cr)
+[![Releases](https://img.shields.io/github/release/vladfaust/time-format.cr.svg?style=flat-square)](https://github.com/vladfaust/time-format.cr/releases)
 
-[TimeFormat](https://github.com/vladfaust/time_format.cr) module humanizes time spans.
+Time spans humanizing made simple for [Crystal](https://crystal-lang.org/).
 
 ## Installation
 
@@ -12,8 +15,10 @@ Add this to your application's `shard.yml`:
 dependencies:
   time_format:
     github: vladfaust/time_format.cr
-    version: ~> 0.1.0
+    version: ~> 0.1.0 # Find an actual version in releases
 ```
+
+This shard follows [Semantic Versioning 2.0.0](https://semver.org/), so see [releases](https://github.com/vladfaust/i18n.cr/releases) and change the `version` accordingly.
 
 ## Usage
 
@@ -35,9 +40,3 @@ TimeFormat.μs(1.0.milliseconds / 5.0) # => 200μs
 ## Contributors
 
 - [@vladfaust](https://github.com/vladfaust) Vlad Faust - creator, maintainer
-
-
-## Credits
-
-- Logo font: [HVD Comic Serif Pro](https://www.fontsquirrel.com/fonts/hvd-comic-serif-pro)
-- Logo image: [EmojiOne](https://www.emojione.com/)
