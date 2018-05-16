@@ -1,5 +1,3 @@
-require "./time_format/*"
-
 # Available methods (for convenience):
 #
 # - `#auto`
