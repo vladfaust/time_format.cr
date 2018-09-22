@@ -4,7 +4,6 @@
 [![Build status](https://img.shields.io/travis/vladfaust/time_format.cr/master.svg?style=flat-square)](https://travis-ci.org/vladfaust/time_format.cr)
 [![Docs](https://img.shields.io/badge/docs-available-brightgreen.svg?style=flat-square)](https://vladfaust.com/time_format.cr)
 [![Releases](https://img.shields.io/github/release/vladfaust/time_format.cr.svg?style=flat-square)](https://github.com/vladfaust/time_format.cr/releases)
-
 [![Awesome](https://github.com/vladfaust/awesome/blob/badge-flat-alternative/media/badge-flat-alternative.svg)](https://github.com/veelenga/awesome-crystal)
 [![vladfaust.com](https://img.shields.io/badge/style-.com-lightgrey.svg?longCache=true&style=flat-square&label=vladfaust&colorB=0a83d8)](https://vladfaust.com)
 
