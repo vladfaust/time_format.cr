@@ -1,2 +1,2 @@
 require "spec"
-require "../src/time_format"
+require "../src/time-span-humanize"

@@ -1,9 +1,9 @@
-name: time_format
-version: 0.1.1
+name: time-span-humanize
+version: 0.2.0
 
 authors:
-  - Vlad Faust <vladislav.faust@gmail.com>
+  - Vlad Faust <mail@vladfaust.com>
 
-crystal: 0.24.2
+crystal: 0.28.0
 
 license: MIT
