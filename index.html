@@ -36,11 +36,6 @@
   <div class="types-list">
     <ul>
   
-  <li class=" " data-id="github.com/vladfaust/time_format.cr/TimeFormat" data-name="timeformat">
-      <a href="TimeFormat.html">TimeFormat</a>
-      
-    </li>
-  
 </ul>
 
   </div>
@@ -48,26 +43,18 @@
 
 
 <div class="main-content">
-<h1>TimeFormat</h1>
+<h1>Time::Span#humanize</h1>
 
 <p><a href="https://crystal-lang.org/" target="_blank"><img src="https://img.shields.io/badge/built%20with-crystal-000000.svg?style=flat-square" alt="Built with Crystal"/></a>
-<a href="https://travis-ci.org/vladfaust/time_format.cr" target="_blank"><img src="https://img.shields.io/travis/vladfaust/time_format.cr/master.svg?style=flat-square" alt="Build status"/></a>
-<a href="https://github.vladfaust.com/time_format.cr" target="_blank"><img src="https://img.shields.io/badge/api_docs-online-brightgreen.svg?style=flat-square" alt="API Docs"/></a>
-<a href="https://github.com/vladfaust/time_format.cr/releases" target="_blank"><img src="https://img.shields.io/github/release/vladfaust/time_format.cr.svg?style=flat-square" alt="Releases"/></a>
+<a href="https://travis-ci.org/vladfaust/time-span-humanize" target="_blank"><img src="https://img.shields.io/travis/vladfaust/time-span-humanize/master.svg?style=flat-square" alt="Build status"/></a>
+<a href="https://github.vladfaust.com/time-span-humanize" target="_blank"><img src="https://img.shields.io/badge/api_docs-online-brightgreen.svg?style=flat-square" alt="API Docs"/></a>
+<a href="https://github.com/vladfaust/time-span-humanize/releases" target="_blank"><img src="https://img.shields.io/github/release/vladfaust/time-span-humanize.svg?style=flat-square" alt="Releases"/></a>
 <a href="https://github.com/veelenga/awesome-crystal" target="_blank"><img src="https://awesome.re/badge-flat2.svg" alt="Awesome"/></a>
 <a href="https://vladfaust.com" target="_blank"><img src="https://img.shields.io/badge/style-.com-lightgrey.svg?longCache=true&style=flat-square&label=vladfaust&colorB=0a83d8" alt="vladfaust.com"/></a>
 <a href="https://www.patreon.com/vladfaust" target="_blank"><img src="https://img.shields.io/badge/dynamic/json.svg?label=patrons&url=https://www.patreon.com/api/user/11296360&query=$.included[0].attributes.patron_count&style=flat-square&colorB=red&maxAge=86400" alt="Patrons count"/></a>
 <a href="https://gitter.im/vladfaust/Lobby" target="_blank"><img src="https://img.shields.io/badge/chat%20on-gitter-green.svg?colorB=ED1965&logo=gitter&style=flat-square" alt="Gitter chat"/></a></p>
 
 <p>Time spans humanizing module for <a href="https://crystal-lang.org/" target="_blank">Crystal</a>.</p>
-
-<h2>Supporters</h2>
-
-<p>Thanks to all my patrons, I can continue working on beautiful Open Source Software! 🙏</p>
-
-<p><a href="https://github.com/ljuti" target="_blank">Lauri Jutila</a>, <a href="https://seendex.ru" target="_blank">Alexander Maslov</a>, Dainel Vera</p>
-
-<p><em>You can become a patron too in exchange of prioritized support and other perks</em></p>
 
 <p><a href="https://www.patreon.com/vladfaust" target="_blank"><img src="https://vladfaust.com/img/patreon-small.svg" alt="Become Patron"/></a></p>
 
@@ -76,26 +63,27 @@
 <p>Add this to your application's <code>shard.yml</code>:</p>
 
 <pre><code class="language-yaml">dependencies:
-  time_format:
-    github: vladfaust/time_format.cr
-    version: ~> 0.1.1</code></pre>
+  time-span-humanize:
+    github: vladfaust/time-span-humanize
+    version: ~> 0.2.0</code></pre>
 
-<p>This shard follows <a href="https://semver.org/" target="_blank">Semantic Versioning 2.0.0</a>, so see <a href="https://github.com/vladfaust/i18n.cr/releases" target="_blank">releases</a> and change the <code>version</code> accordingly.</p>
+<p>This shard follows <a href="http://semver.org/" target="_blank">Semantic Versioning v2.0.0</a>, so check <a href="https://github.com/vladfaust/time-span-humanize/releases" target="_blank">releases</a> and change the <code>version</code> accordingly.</p>
+
+<blockquote>Note that until Crystal is officially released, this shard would be in beta state (<code>0.*.*</code>), with every <strong>minor</strong> release considered breaking. For example, <code>0.1.0</code> → <code>0.2.0</code> is breaking and <code>0.1.0</code> → <code>0.1.1</code> is not.</blockquote>
 
 <h2>Usage</h2>
 
-<pre><code class="language-crystal"><span class="k">require</span> <span class="s">&quot;time_format&quot;</span>
+<pre><code class="language-crystal"><span class="k">require</span> <span class="s">&quot;time-span-humanize&quot;</span>
 
-<span class="t">TimeFormat</span>.auto(<span class="n">0</span>.minutes <span class="o">+</span> <span class="n">42</span>.seconds) <span class="c"># =&gt; 42s</span>
-<span class="t">TimeFormat</span>.μs(<span class="n">1.0</span>.milliseconds <span class="o">/</span> <span class="n">5.0</span>) <span class="c"># =&gt; 200μs</span></code></pre>
+<span class="n">542.11</span>.milliseconds.humanize <span class="c"># =&gt; &quot;542ms&quot;</span></code></pre>
 
 <h2>Contributing</h2>
 
-<ol><li>Fork it ( https://github.com/vladfaust/time_format.cr/fork )</li><li>Create your feature branch (git checkout -b my-new-feature)</li><li>Commit your changes (git commit -am 'Add some feature')</li><li>Push to the branch (git push origin my-new-feature)</li><li>Create a new Pull Request</li></ol>
+<ol><li>Fork it ( https://github.com/vladfaust/time-span-humanize/fork )</li><li>Create your feature branch (git checkout -b my-new-feature)</li><li>Commit your changes (git commit -am 'feat: some feature') using <a href="https://github.com/angular/angular/blob/master/CONTRIBUTING.md#commit" target="_blank">Angular style commits</a></li><li>Push to the branch (git push origin my-new-feature)</li><li>Create a new Pull Request</li></ol>
 
 <h2>Contributors</h2>
 
-<ul><li><a href="https://github.com/vladfaust" target="_blank">@vladfaust</a> Vlad Faust - creator, maintainer</li></ul>
+<ul><li><a href="https://github.com/vladfaust" target="_blank">Vlad Faust</a> - creator and maintainer</li></ul>
 </div>
 </body>
 </html>
